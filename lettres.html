@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Les lettres</title>
+  <h1 style="color: black; font-family: Garamond">Lettres</h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .container {
+      position: relative;
+      width: 50%;
+      margin: 20px auto;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color: rgba(0, 140, 186, 0.7);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .alert {
+      padding: 20px;
+      background-color: #f44336;
+      color: white;
+      margin: 20px auto;
+      width: 50%;
+      text-align: center;
+    }
+
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .closebtn:hover {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+<div class="alert">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+  <strong>ATTENTION!</strong> Il y a des spoilers!
+</div>
+
+<h2>Liste des lettres</h2>
+
+<div class="container">
+  <h3>Lettre 1</h3>
+  <img src="assets/envelop.png" alt="envelop" style="width: 100%;">
+  <div class="overlay">
+    <div class="text">Jeanne, Le notaire Lebel te remtettra une eveloppe. Cette enveloppe nèest pas pour toi. Elle est destinée à ton père. Le tien et celui de Simon. Retrouve-le et remets-lui cette enveloppe</div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>Lettre 2</h3>
+  <img src="assets/envelop.png" alt="envelop" style="width: 100%;">
+  <div class="overlay">
+    <div class="text">Content of Lettre 2</div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>Lettre 3</h3>
+  <img src="assets/envelop.png" alt="envelop" style="width: 100%;">
+  <div class="overlay">
+    <div class="text">Content of Lettre 3</div>
+  </div>
+</div>
+
+<div class="container">
+  <h3>Lettre 4</h3>
+  <img src="assets/envelop.png" alt="envelop" style="width: 100%;">
+  <div class="overlay">
+    <div class="text">Content of Lettre 4</div>
+  </div>
+</div>
+    
+<div class="container">
+  <h3>Lettre 4</h3>
+  <img src="assets/redbook.png" alt="envelop" style="width: 100%;">
+  <div class="overlay">
+    <div class="text">Enterrement. 
+Au notaire Hermile Lebel. 
+Notaire et ami,
+Emmenez les jumeaux, 
+Enterrez-moi toute nue 
+Enterrez-moi sans cercueil
+Sans habit, sans écorce
+Sans prière
+Et le visage tounré vers le sol
+Déposez-moi u fond d’un trou,
+Face première contre le monde. 
+En guise d’adieu
+Vous lancerez sur moi
+Chacun
+Un seau d’eau fraîche.
+Puis vous jetterez la terre et scellerez ma tombe.
+
+Pierre et épitaphe.
+Au notaire Hermile Lebel.
+Notaire et ami.
+Aucune pierre ne sera posée sur ma tombe
+Et mon nom gravé nulle part. 
+Pas d’épitaphe pour ceux qui ne tiennent pas leurs promesses.
+Et une promesse ne fut pas tenue
+</div>
+  </div>
+</div>
+
+</body>
+</html>
